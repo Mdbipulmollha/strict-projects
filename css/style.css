@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,400&display=swap');
+
+/* font-family: 'Noto Serif', serif;
+font-family: 'Open Sans', sans-serif; */
+root:{
+		/* --theme-color-dark:#212529;
+		--theme-color-blue:#15a4fa; */
+		--Noto-Serif: 'Noto Serif', serif;
+		--Open-Sans:'Open Sans', sans-serif;
+
+}
+
+body{
+	font-family:var(--Open-Sans);
+	color:var(--theme-color-dark);
+
+}
+<!-- *********header-start -->
+
+header{
+	
+}
+ .navbar-light .navbar-nav .nav-link{
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--theme-color-dark);
+	font-size:16px;
+	color: #2d3950;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #15a4fa;
+}
+
+<-- *********header-end -->
+
+/* *******banner section start */
+
+
+.banner_section{
+	position: relative;
+}
+.bg_img img{}
+.banner_position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate( -50%, -50%);
+}
+.banner_containt{}
+.banner_containt h1{
+    font-weight: 900;
+    font-size: 125px;
+    color: white;
+}
+.banner_containt span{
+    margin: 0 auto;
+    max-width: 650px;
+    height: 4px;
+    display: block;
+    background-color: #15a4fa;
+}
+.banner_containt p{
+    color: white;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.btn_css {}
+.btn_css:hover{
+    color: #fff;
+    background-color: #15a4fa;
+}
+.btn_css {
+	color: white;
+	padding: 10px 30px;
+	border: 1px solid #15a4fa;
+}
+
+
+.banner_arrow a{
+font-weight: 600;
+transform: translateX(-50%);
+bottom: 20px;
+position: absolute;	
+left: 50%;	
+color: #f5efef;	
+font-size: 30px;
+animation-name:  updown ;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes updown{
+	form{
+		bottom:20px;
+	}
+	to{
+		bottom:70px;
+	}
+}
+
+
+/* *******banner section end */
+
+/* ****simpale-section start******/
+.simpale_section{
+    background-color: #f6f7f7;
+}
+.simpale_containt{
+    text-align: center;
+    color: #15a4fa;
+}
+.simpale_containt h2{
+    padding: 25px 0px;
+    font-size: 46px;
+    font-weight: 600;
+    color: #2d3950;
+}
+.simpale_containt p{
+    font-size: 18px;
+    color: #2f2f2f;
+    max-width: 955px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* simpale end******** */
+
+
+/* service start****** */
+.service_section{
+    padding: 50px 0;
+}
+.service_icon {
+    margin: 0 auto;
+    font-weight: 800;
+    background-image: linear-gradient(90deg, rgb(21 164 250) 50%, #4fc3f7 50% );
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.service_icon a{
+    color: white;
+    text-shadow: 4px 4px 2px rgb(58 54 54);
+}
+.service_box{
+    text-align: center;
+}
+.service_box h2 {
+    padding-top: 18px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d3950;
+}
+.service_box p{
+    font-size: 14px;
+}
+
+/* service end********* */
+
+
+/* showcase start****** */
+
+.Showcase_section{
+    padding: 30px 0;
+   /*  background-color:#2d3950;  */
+}
+.Showcase_section .heading_box{
+    text-align: center;
+}
+.Showcase_section .heading_box h2{
+    font-size: 41px;
+    font-weight: 900;
+    color: #2d3950;
+}
+.Showcase_section .heading_box p{}
+.img_box{
+    padding-bottom: 23px;
+    position: relative;
+}
+.img_box img{}
+.img_box ul{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    transform: translateY(50%);
+    z-index: 1;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.img_box ul:hover{
+	bottom: 60%;
+	transform:translateY(60%);
+	opacity: 1; 
+
+}
+.img_box ul li a{
+    border: 1px solid #ebeff1;
+    color: white;
+    font-size: 16px;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+.img_box ul li a:hover{
+    background-color: #2d3950;
+    border: 1px solid #15a4fa;
+}
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color:#15a4fa;
+	opacity: 0;
+	transition: all 0.4s ease;
+	transform: scale(0);
+}
+.img_box:hover .overlay{
+	opacity: 0.8;
+	transform: scale(1);
+}
+
+/* showcase end********** */
+
+
+/* staywithstart***************** */
+
+
+.staywith_section {
+    background-image: url(../images/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.staywith_section .send_btn{
+	color: #f1eded;
+	padding: 5px 38px;
+	border: 1px solid #15a4fa;
+	font-weight: 800;
+	background-color: #2f3848;
+	font-size: 20px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+.staywith_section .send_btn:hover{
+	color:white;
+    background-color: #15a4fa;
+}
+.staywith_section .check{
+	
+color: white;
+}
+
+.contact_overlay{
+	background-color: #2d3950;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+}
+.z-index{
+	position: relative;
+}
+.stay_heading{
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+.stay_heading h2{
+    font-size: 61px;
+    font-weight: 900;
+    color: white;
+}
+.stay_heading p{
+    font-size: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16PX;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #353d4b69;
+    border: 1px solid #74797b;
+    }
+ .form-control:focus {
+    color: #fff;
+    background-color: #fff;
+    border-color: #15a4fa;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 21%);
+}
+/* staywith end******************** */
+/* footer stsrt************ */
+footer{
+ padding: 30px 0; }
+footer p{
+	font-size: 16px;
+	color: #2d3950;
+}
+footer ul{
+	justify-content: flex-end;
+}
+footer ul li{}
+footer ul li a {
+    display: block;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid #15a4fa;
+    background-color:#15a4fa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #fff; 
+}
+footer ul li a:hover{
+	background-color: transparent;
+	color: #15a4fa;
+}
+
+
+/* footer end************ */
+
+
